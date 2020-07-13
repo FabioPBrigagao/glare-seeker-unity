@@ -1,9 +1,11 @@
 # Glare Seeker
 
+Glare Seeker is a 3D platformer and puzzle game developed for PC/Mac. The goal of the game is to reach the light glares.
 
+The game is still under development.
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/FabioPBrigagao/glare-seeker/blob/master/Images%20%26%20Gifs/title.PNG">
 </p>
 
 ## Unity Version
@@ -24,13 +26,24 @@ This is a Unity project folder, so the game will run under the Unity editor unle
 
 Note: The game runs on a reference aspect ratio of 4:3
 
-## Gameplay Controls
+## Controls
 
+- MOVE - WASD or arrow keys
 
+- JUMP - left mouse click (hold for higher jump)
+
+- CAMERA ROTATION - hold right mouse click
+
+## Gameplay Preview
+
+<p align="center">
+  <img src="https://github.com/FabioPBrigagao/glare-seeker/blob/master/Images%20%26%20Gifs/gameplay.gif">
+</p>
 
 ## Credits
 
 **Font**
+
 "Atmosoheric" Font by Wahyu Eka Prasetya
 
 

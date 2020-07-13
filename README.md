@@ -1,8 +1,6 @@
 # Glare Seeker
 
-Glare Seeker is a 3D platformer and puzzle game developed for PC/Mac. The goal of the game is to reach the light glares.
-
-The game is still under development.
+Glare Seeker is a 3D platformer and puzzle game developed for PC/Mac where the goal of the game is to reach the glares of light. The game is still under development.
 
 <p align="center">
   <img src="https://github.com/FabioPBrigagao/glare-seeker/blob/master/Images%20%26%20Gifs/title.PNG">

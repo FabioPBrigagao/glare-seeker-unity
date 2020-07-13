@@ -8,6 +8,7 @@ public class StageMovement : MonoBehaviour {
 
     public Transform[] nodes;
     public float cycleTime;
+    public Rigidbody rb;
 
     Vector3 position;
     Vector3 start;
@@ -15,41 +16,18 @@ public class StageMovement : MonoBehaviour {
     int nodeIndex = 0;
 
     void Awake() {
-        player = GameObject.FindGameObjectWithTag("Player");
         start = nodes[nodeIndex].position;
         end = nodes[nodeIndex + 1].position;
     }
 
     void FixedUpdate() {
-
         position = Vector3.Lerp(start, end, Mathf.Cos(Time.time / cycleTime * Mathf.PI * 2) * -.5f + .5f);
-        gameObject.GetComponent<Rigidbody>().MovePosition(position);
-
-        // WORK IN PROGRESS
-        //if (position == end) {
-        //    if (nodeIndex == nodes.Length - 2) {
-        //        nodeIndex = 0;
-        //        start = nodes[nodeIndex].position;
-        //    } else  {
-        //        nodeIndex += 1;
-        //        start = nodes[nodeIndex + 1].position;
-        //    }
-        //}
-        //if (position == start) {
-        //    if (nodeIndex == nodes.Length - 2) {
-        //        nodeIndex = 0;
-        //        end = nodes[nodeIndex].position;
-        //        nodeIndex = -1;
-        //    } else {
-        //        nodeIndex += 1;
-        //        end = nodes[nodeIndex + 1].position;
-        //    }
-        //}
+        rb.MovePosition(position);
     }
 
     void OnTriggerStay(Collider col) {
-        if (col.gameObject == player) {
-           player.GetComponent<CharacterController>().Move(gameObject.GetComponent<Rigidbody>().velocity * Time.deltaTime);
+        if (col.gameObject.tag == "Player") {
+           col.GetComponent<CharacterController>().Move(rb.velocity * Time.deltaTime);
         }
     }
 

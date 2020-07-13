@@ -2079,6 +2079,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7195217455562382535, guid: dcd2a236373101243a3919faa226d60a,
+        type: 3}
+      propertyPath: scene
+      value: 
+      objectReference: {fileID: 682024098}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcd2a236373101243a3919faa226d60a, type: 3}
 --- !u!1001 &910577310
@@ -4695,6 +4700,16 @@ PrefabInstance:
       propertyPath: m_CenterOnActivate
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1707128773945391352, guid: 9eb88316186c7e74a9e549f691448e04,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1395646695}
+    - target: {fileID: 1707128773945391352, guid: 9eb88316186c7e74a9e549f691448e04,
+        type: 3}
+      propertyPath: scene
+      value: 
+      objectReference: {fileID: 682024098}
     - target: {fileID: 1707128773945391358, guid: 9eb88316186c7e74a9e549f691448e04,
         type: 3}
       propertyPath: m_YAxis.Value

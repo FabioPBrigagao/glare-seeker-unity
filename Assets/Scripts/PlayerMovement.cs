@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
-    SceneController scene;
-
+   
+    public SceneController scene;
     public CharacterController controller;
     public Transform groundCheckPos;
     public LayerMask groundMask;
@@ -29,7 +29,6 @@ public class PlayerMovement : MonoBehaviour {
     const float GRAVITY = -30f;
 
     void Awake() {
-        scene = GameObject.FindGameObjectWithTag("SceneController").GetComponent<SceneController>();
         scene.OnGameplayStarted += StartGame;
     }
 
@@ -76,7 +75,7 @@ public class PlayerMovement : MonoBehaviour {
 
     void Gravity() {
         if (!isGrounded) directionY.y += GRAVITY * Time.deltaTime;
-        else directionY.y = -2f;
+        else directionY.y = 0f;
         controller.Move(directionY * Time.deltaTime);
     }
 

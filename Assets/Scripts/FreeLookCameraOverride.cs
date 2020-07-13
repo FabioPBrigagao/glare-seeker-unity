@@ -6,16 +6,13 @@ using Cinemachine;
 
 public class FreeLookCameraOverride : MonoBehaviour {
     public CinemachineFreeLook Cam;
-    GameObject player;
-    SceneController scene;
+    public GameObject player;
+    public SceneController scene;
 
     float maxSpeedY;
     float maxSpeedX;
 
     void Awake() {
-        player = GameObject.FindGameObjectWithTag("Player");
-        scene = GameObject.FindGameObjectWithTag("SceneController").GetComponent<SceneController>();
-
         scene.OnGameplayStarted += FollowPlayer;
 
         Cam.LookAt = player.transform;

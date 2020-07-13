@@ -142,6 +142,7 @@ MonoBehaviour:
   - {fileID: 4265909843269030416}
   - {fileID: 7032970332870134907}
   cycleTime: 10
+  rb: {fileID: 54722047820579416}
 --- !u!114 &114934494777057038
 MonoBehaviour:
   m_ObjectHideFlags: 0
